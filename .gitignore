@@ -28,7 +28,7 @@ x86/
 [Aa][Rr][Mm]64/
 bld/
 [Bb]in/
-[Oo]bj/
+[Oo]bj/*.cache
 [Oo]ut/
 [Ll]og/
 [Ll]ogs/
