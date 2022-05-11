@@ -24,7 +24,7 @@ namespace KSeF_Batch
             // poprawka błedu: status 200 zamień na 201
             if (response.RequestMessage!=null
             && response.RequestMessage.RequestUri!=null
-            && response.RequestMessage.RequestUri.PathAndQuery.StartsWith("/batch/Init")
+            && response.RequestMessage.RequestUri.PathAndQuery.StartsWith("/api/batch/Init")
             && response.StatusCode == System.Net.HttpStatusCode.OK)
                 response.StatusCode = System.Net.HttpStatusCode.Created;
         }
