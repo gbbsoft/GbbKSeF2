@@ -602,11 +602,11 @@ namespace TestKSeF2
                 // parameters
                 KSeF_Online.QueryInvoiceRequest body = new()
                 {
-                    QueryCriteria = new KSeF_Online.QueryCriteriaInvoiceRangeType()
+                    QueryCriteria = new KSeF_Online.QueryCriteriaInvoiceIncrementalType()
                     {
                         SubjectType = KSeF_Online.QueryCriteriaInvoiceTypeSubjectType.Subject2,
-                        InvoicingDateFrom = this.QueryFiles_FromDate_dateTimePicker.Value,
-                        InvoicingDateTo = this.QueryFiles_ToDate_dateTimePicker.Value
+                        AcquisitionTimestampThresholdFrom = this.QueryFiles_FromDate_dateTimePicker.Value,
+                        AcquisitionTimestampThresholdTo = this.QueryFiles_ToDate_dateTimePicker.Value
 
                     }
                 };
